@@ -1,14 +1,31 @@
-# Flores amarillas
+# Flores amarillas para ti
 
-Web estática romántica con intro, flores amarillas animadas, interacción táctil/click y mensajes tipo video.
+Una experiencia web interactiva con flores amarillas, pensada como dedicatoria romántica.
 
-## Publicar en Vercel
+## Qué incluye
 
-Sube esta carpeta como proyecto. No necesita framework ni instalación de dependencias.
+- Intro con una flor grande que se abre.
+- Jardín animado de flores amarillas.
+- Interacción con toque, click o arrastre.
+- Pétalos y nuevas flores al tocar la pantalla.
+- Mensajes románticos que cambian automáticamente.
+- Botones para repetir la intro y pausar la animación.
+- Diseño adaptable para celular y escritorio.
 
-- Archivo principal: `index.html`
-- Estilos: `styles.css`
-- Animación e interacción: `script.js`
+## Archivos
 
-También puedes abrir `index.html` directamente en el navegador para probarlo.
-# flores_amarillas
+- `index.html`: estructura principal de la página.
+- `styles.css`: diseño, responsive y animación visual de la intro.
+- `script.js`: animación del jardín, flores, pétalos e interacción.
+
+## Cómo probarlo
+
+Abre `index.html` en el navegador.
+
+## Personalización rápida
+
+Para cambiar los mensajes, edita el arreglo `scenes` en `script.js`.
+
+Para cambiar el texto inicial, edita el contenido dentro de la sección `intro` en `index.html`.
+
+Para ajustar colores, modifica las variables dentro de `:root` en `styles.css`.
