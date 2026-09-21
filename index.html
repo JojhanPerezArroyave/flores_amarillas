@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flores amarillas para ti</title>
+    <meta
+      name="description"
+      content="Una dedicatoria interactiva con flores amarillas, movimiento y mensajes para una persona especial."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101915'/%3E%3Ccircle cx='32' cy='32' r='8' fill='%23a76b16'/%3E%3Cg fill='%23ffd84d'%3E%3Cellipse cx='32' cy='16' rx='8' ry='14'/%3E%3Cellipse cx='32' cy='48' rx='8' ry='14'/%3E%3Cellipse cx='16' cy='32' rx='14' ry='8'/%3E%3Cellipse cx='48' cy='32' rx='14' ry='8'/%3E%3Cellipse cx='21' cy='21' rx='7' ry='12' transform='rotate(-45 21 21)'/%3E%3Cellipse cx='43' cy='21' rx='7' ry='12' transform='rotate(45 43 21)'/%3E%3Cellipse cx='21' cy='43' rx='7' ry='12' transform='rotate(45 21 43)'/%3E%3Cellipse cx='43' cy='43' rx='7' ry='12' transform='rotate(-45 43 43)'/%3E%3C/g%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="experience" aria-live="polite">
+      <section class="intro is-visible" id="intro" aria-label="Inicio de la dedicatoria">
+        <div class="intro__stage">
+          <div class="intro__glow"></div>
+          <div class="opening-flower" aria-hidden="true">
+            <span class="opening-flower__petal" style="--i: 0"></span>
+            <span class="opening-flower__petal" style="--i: 1"></span>
+            <span class="opening-flower__petal" style="--i: 2"></span>
+            <span class="opening-flower__petal" style="--i: 3"></span>
+            <span class="opening-flower__petal" style="--i: 4"></span>
+            <span class="opening-flower__petal" style="--i: 5"></span>
+            <span class="opening-flower__petal" style="--i: 6"></span>
+            <span class="opening-flower__petal" style="--i: 7"></span>
+            <span class="opening-flower__petal" style="--i: 8"></span>
+            <span class="opening-flower__petal" style="--i: 9"></span>
+            <span class="opening-flower__petal" style="--i: 10"></span>
+            <span class="opening-flower__petal" style="--i: 11"></span>
+            <span class="opening-flower__center"></span>
+          </div>
+          <div class="intro__content">
+            <p class="intro__eyebrow">21 de septiembre</p>
+            <h1>Flores amarillas para ti</h1>
+            <p class="intro__copy">
+              Toca la flor y deja que florezca algo bonito.
+            </p>
+            <button class="start-button" id="startButton" type="button">
+              <span>Abrir flor</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="garden" id="garden" aria-label="Flores amarillas interactivas">
+        <canvas id="gardenCanvas" aria-hidden="true"></canvas>
+
+        <div class="garden__shade"></div>
+
+        <div class="dedication" id="dedication">
+          <p class="dedication__kicker">Para mi amor bonito</p>
+          <h2 id="sceneTitle">Hoy florece algo por ti</h2>
+          <p id="sceneText">
+            Donde toques, aparecen flores. Como tú: llegando y cambiándolo todo.
+          </p>
+        </div>
+
+        <div class="controls" aria-label="Controles de la dedicatoria">
+          <button class="icon-button" id="replayButton" type="button" aria-label="Repetir intro">
+            &#8634;
+          </button>
+          <button class="icon-button" id="pauseButton" type="button" aria-label="Pausar animación">
+            II
+          </button>
+        </div>
+
+        <div class="hint" id="hint">Toca o arrastra para mover las flores</div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
